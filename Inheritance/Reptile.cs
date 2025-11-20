@@ -12,5 +12,9 @@ namespace Inheritance
         public bool isVenomous { get; set; }
         public bool seesInDark  { get; set; }
         public int lengthInInches { get; set; }
+        public override void MakeNoise()
+        {
+            Console.WriteLine("Hisss!");
+        }
     }
 }

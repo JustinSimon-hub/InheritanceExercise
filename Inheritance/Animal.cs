@@ -14,5 +14,10 @@ namespace Inheritance
         public string Sex { get; set; }
         public string skinColor { get; set; }
 
+        public virtual void  MakeNoise()
+        {
+            Console.WriteLine("Generic animal sound.");
+        }
+
     }
 }

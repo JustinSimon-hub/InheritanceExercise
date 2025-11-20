@@ -12,5 +12,10 @@ namespace Inheritance
         public bool canFly { get; set; }
         public int wingSpan { get; set; }
         public string beakType { get; set; }
+
+        public override void MakeNoise()
+        {
+            Console.WriteLine("Chirp chirp!");
+        }
     }
 }

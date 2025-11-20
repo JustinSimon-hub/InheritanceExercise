@@ -52,7 +52,8 @@ namespace Inheritance
                 seesInDark = true,
                 lengthInInches = 24
             };
-
+            reptile.MakeNoise();
+            birdie.MakeNoise();
 
             List<Animal> animals = new List<Animal>();
             animals.Add(birdie);
@@ -66,8 +67,14 @@ namespace Inheritance
                 }
                 else if (animal is Reptile r)
                 {
-                    Console.WriteLine($"Skin color: {r.skinColor}, and night vision:{r.seesInDark}");
+                    Console.WriteLine($"Skin color: {r.skinColor}, and night vision:{r.seesInDark} {r.MakeNoise}");
             }
+
+
+
+
+
+
             }
         }
     } }
