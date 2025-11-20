@@ -8,6 +8,8 @@ namespace Inheritance
         {
             // TODO Be sure to follow best practice when creating your classes
 
+
+
             // Create a class Animal
             // give this class 4 members that all Animals have in common
 
