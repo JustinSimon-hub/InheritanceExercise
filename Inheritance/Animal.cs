@@ -12,6 +12,7 @@ namespace Inheritance
         public int Age { get; set; }
         public string Habitat { get; set; }
         public string Sex { get; set; }
+        public string skinColor { get; set; }
 
     }
 }

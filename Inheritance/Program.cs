@@ -34,7 +34,7 @@ namespace Inheritance
                 Name = "Parrot",
                 Age = 2,
                 Habitat = "Tropical forests",
-                Sex = "Male", 
+                Sex = "Male",
                 featherColor = "Red and Green",
                 canFly = true,
                 wingSpan = 12,
@@ -54,13 +54,20 @@ namespace Inheritance
             };
 
 
-           List<Animal> animals = new List<Animal>();
+            List<Animal> animals = new List<Animal>();
             animals.Add(birdie);
             animals.Add(reptile);
             foreach (var animal in animals)
             {
                 Console.WriteLine($"Name: {animal.Name}, Age: {animal.Age}, Habitat: {animal.Habitat}");
+                if (animal is Bird b)
+                {
+                    Console.WriteLine($"Feather Color: {b.featherColor}, Can Fly: {b.canFly}, Wing Span: {b.wingSpan}");
+                }
+                else if (animal is Reptile r)
+                {
+                    Console.WriteLine($"Skin color: {r.skinColor}, and night vision:{r.seesInDark}");
+            }
             }
         }
-    }
-}
+    } }
