@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Inheritance
 {
@@ -24,18 +25,42 @@ namespace Inheritance
 
 
 
+            //     public string Name { get; set; }
+            //public int Age { get; set; }
+            //public string Habitat { get; set; }
+            //public string Sex { get; set; }
+            Bird birdie = new Bird
+            {
+                Name = "Parrot",
+                Age = 2,
+                Habitat = "Tropical forests",
+                Sex = "Male", 
+                featherColor = "Red and Green",
+                canFly = true,
+                wingSpan = 12,
 
-            /*Create an object of your Bird class
-             *  give values to your members using the object of your Bird class
-             *  
-             * Creatively display the class member values 
-             */
+            };
 
-            /*Create an object of your Reptile class
-             *  give values to your members using the object of your Reptile class
-             *  
-             * Creatively display the class member values 
-             */
+
+            Reptile reptile = new Reptile
+            {
+                Name = "Iguana",
+                Age = 5,
+                Habitat = "Amazon Rainforest",
+                skinColor = "Green",
+                isVenomous = false,
+                seesInDark = true,
+                lengthInInches = 24
+            };
+
+
+           List<Animal> animals = new List<Animal>();
+            animals.Add(birdie);
+            animals.Add(reptile);
+            foreach (var animal in animals)
+            {
+                Console.WriteLine($"Name: {animal.Name}, Age: {animal.Age}, Habitat: {animal.Habitat}");
+            }
         }
     }
 }

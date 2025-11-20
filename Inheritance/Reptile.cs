@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Inheritance
 {
-    public class Reptile
+    public class Reptile : Animal 
     {
         public string skinColor { get; set; }
         public bool isVenomous { get; set; }
