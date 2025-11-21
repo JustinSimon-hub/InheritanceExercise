@@ -19,5 +19,7 @@ namespace Inheritance
             Console.WriteLine("Generic animal sound.");
         }
 
+        public static int numberOfCars { get; set; }
+
     }
 }

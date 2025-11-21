@@ -58,6 +58,7 @@ namespace Inheritance
             List<Animal> animals = new List<Animal>();
             animals.Add(birdie);
             animals.Add(reptile);
+            
             foreach (var animal in animals)
             {
                 Console.WriteLine($"Name: {animal.Name}, Age: {animal.Age}, Habitat: {animal.Habitat}");
@@ -69,10 +70,13 @@ namespace Inheritance
                 {
                     Console.WriteLine($"Skin color: {r.skinColor}, and night vision:{r.seesInDark} {r.MakeNoise}");
             }
-
-
+                foreach(var ani in animals)
+                {
+                    Animal.numberOfCars++;
+                }
+                Console.WriteLine($"The number of animals is {Animal.numberOfCars}");
                 //Finished exercise and leave open for implemtentation of more means of inheriting properties.
-
+                
 
 
             }
