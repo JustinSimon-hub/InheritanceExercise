@@ -71,7 +71,7 @@ namespace Inheritance
             }
 
 
-
+                //Finished exercise and leave open for implemtentation of more means of inheriting properties.
 
 
 
